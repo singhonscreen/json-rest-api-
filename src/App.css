@@ -1,38 +1,283 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.AppContainer{
+  width: 70vw;
+  margin: auto;
+  background-color: #8080800d;
+  border-radius: 20px;
+}
+
 .App {
   text-align: center;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sidebar{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
+  width: 240px;
+  height: 94vh;
+  border-radius: 20px;
+  border-right: 2px solid #8080800d;
+  box-shadow: 2px 0 #8080800d;
+}
+
+.readercontainer {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  height: 60px;
+  width: 200px;
+  background-color: white;
+  margin-top: 10px;
+}
+.readercontainer img{
+  width: 50px;
+  height: 50px;
+}
+.username{
+  text-align: start;
+  margin-left: 10px;
+}
+
+.viewcontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+  background-color: white;
+  width: 200px;
+  height: 100px;
+}
+.viewicons{
+  display: flex;
+  background-color: rgb(187, 183, 183);
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+.viewicons li{
+  list-style: none;
+  padding: 10px;
+}
+.fas{
+  font-size: 25px;
+  color: black;
+  border: none;
+}
+.btn{
+  padding: 7px 25px;
+  border: none;
+  background-color: rgb(176, 208, 209);
+  border-radius: 4px;
+  margin-top: 5px;
+
+}
+
+.verticalCard{
+  margin-top: 25px;
+    width: 650px;
+    height: 75px;
+    background-color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.headingnews h3{
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 500px;
+}
+.headingnews p{
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 500px;
+}
+.verticalCardContainer{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.verticalCardContainer img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.headingnews{
+  padding: 10px;
+  text-align: justify;
+}
+nav{
+  text-align: center;
+}
+.pagination{
+  margin: 2% 0;
+  display: flex;
+  justify-content: center;
+}
+.pagination li{
+  padding: 2px 20px;
+  border: 1px solid grey;
+  margin: 2px 5px;
+  list-style: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pagination li.active{
+  background-color: grey;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.gridCardContainer img{
+  height: 120px;
+  width: 180px;
+  text-align: justify;
+  margin-top: 2px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.gridCard{
+  /* height: 500px; */
+  display: flex;
+  flex-wrap: wrap;
+}
+.gridCard1{
+  height: 200px;
+  width: 200px;
+  background-color: white;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis; 
+  padding: 10px;
+  margin: 25px 15px;
+  /* margin-top: 50px; */
+}
+.headinggrid{
+  text-align: justify;
+}
+.headinggrid h3{
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.headinggrid p{
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 14px;
+  margin-top: 2px;
+}
+.time{
+  color: grey;
+}
+.modalContainer{
+  height: 98vh;
+  width: 71vw;
+  position: fixed;
+  top: 1.75%;
+  left: 14%;
+  border-radius: 20px;
+  background-color: #eee7e7e3;
+}
+.formContainer{
+  padding: 10px;
+  margin-left: 10px;
+  text-align: justify;
+}
+.country{
+  position: relative;
+  /* text-align: center; */
+}
+.country i{
+  position: absolute;
+  left: 230px;
+  top: 5px;
+  font-size: 14px;
+}
+.boxmodal{
+  display: flex;
+  background-color: rgb(201, 196, 196);
+  height: 98vh;
+  width: 60vw;
+  border-radius: 20px;
+}
+.formContainer input{
+  height: 25px;
+  width: 200px;
+  border: none;
+  outline: none;
+}
+.formContainer textarea{
+  height: 50px;
+  width: 300px;
+  border: none;
+  outline: none;
+}
+.country input{
+  width: 250px;
+}
+span{
+  color: rgb(224, 73, 73);
+}
+.countrycode input{
+  width: 50px;
+  margin-right: 8px;
+}
+.phoneNumber input{
+  width: 140px;
+}
+.inputContain{
+  margin-top: 20px;
+}
+.btn2{
+  margin-top: 20px;
+}
+.btn2 button{
+  padding: 4px 20px;
+  border: none;
+  color: white;
+  background-color: rgb(46, 148, 46);
+  border-radius: 5px;
+}
+.closebtn{
+  position: absolute;
+  right: 10px;
+  color: black;
+  font-size: 30px;
+  /* font-weight: bold; */
+}
+.newspic img{
+  height: 98vh;
+  width: 71vw;
+  position: fixed;
+  top: 1.75%;
+  left: 14%;
+  border-radius: 20px;
+  background-color: #eee7e7e3;
+}
+.toggleclass2{
+  background: blueviolet;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius:5px ;
+  padding: 3px 25px;
+}
+.toggleclass{
+  background: blueviolet;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius:5px ;
+  padding: 3px 25px;
+}
+.viewicons i{
+  width: 75px;
+  border-radius: 5px;
 }
