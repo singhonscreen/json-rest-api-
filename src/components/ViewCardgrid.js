@@ -1,7 +1,8 @@
-import React from 'react';
+import React, {useState} from 'react';
 import NewsModal from './NewsModal';
 
 const ViewCardgrid = ({currCard, samay, openNews,setOpenNews }) => {
+    const [style, setStyle] = useState({display: 'none'});
     return (
         <div className="gridCard">
         {currCard.map((item) => {
@@ -9,9 +10,11 @@ const ViewCardgrid = ({currCard, samay, openNews,setOpenNews }) => {
                 <div className="gridCard1" onClick={()=>setOpenNews(true)}>
                     <div className="gridCardContainer">
                     <div className="headinggrid">
+                    <div  className="main" >
                     <h3>{item.title}</h3>
                     <p>  {item.body} </p>
                     <p className="time">{samay} GMT</p>
+                    </div>
                     </div>
                     <img src="images/p1.jpg" alt="not available" />
                     </div>

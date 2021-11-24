@@ -33,6 +33,7 @@ const NewsVerCard = ({view}) => {
    const paginate =(pageNumber)=>{
        setCurrpage(pageNumber)
    }
+   
 
     return (
 <>

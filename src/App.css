@@ -9,6 +9,17 @@
   background-color: #8080800d;
   border-radius: 20px;
 }
+.deleteitem{
+  display: flex;
+ 
+}
+.deleteitem i{
+  align-self: center;
+  justify-self: center;
+  margin-top: 50px;
+  padding:0 10px;
+  color: rgb(226, 126, 126);
+}
 
 .App {
   text-align: center;
@@ -164,6 +175,8 @@ nav{
 }
 .headinggrid{
   text-align: justify;
+  height: 100px;
+  width: 100px;
 }
 .headinggrid h3{
   white-space: nowrap; 
@@ -280,4 +293,12 @@ span{
 .viewicons i{
   width: 75px;
   border-radius: 5px;
+}
+.headinggrid .main{
+  display:none ;
+  height: 150px;
+  width: 150px;
+}
+.headinggrid .main:hover{
+  display: block;
 }
