@@ -1,8 +1,7 @@
-import React, {useState} from 'react';
+import React from 'react';
 import NewsModal from './NewsModal';
 
 const ViewCardgrid = ({currCard, samay, openNews,setOpenNews }) => {
-    const [style, setStyle] = useState({display: 'none'});
     return (
         <div className="gridCard">
         {currCard.map((item) => {

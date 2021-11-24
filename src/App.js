@@ -4,7 +4,7 @@ import Sidebar from './components/Sidebar';
 import { BrowserRouter } from 'react-router-dom';
 import NewsVerCard from './components/NewsVerCard';
 function App() {
-  const [view, setView] = useState(true)
+  const [view, setView] = useState(false)
 
 
   return (

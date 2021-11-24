@@ -7,10 +7,10 @@ const View = ({setView,view}) => {
         <div className="viewcontainer">
         <h3>View Toggle</h3>
         <ul  className="viewicons" onClick={()=>setActive(!isActive)} >
-            <li className={isActive ? "toggleclass2" : null}>
+            <li className={!isActive ? "toggleclass2" : null}>
             <i className="fas fa-th" onClick={()=>setView(!view)}></i>
             </li>
-            <li className={!isActive ? "toggleclass" : null}>
+            <li className={isActive ? "toggleclass" : null}>
             <i className="fas fa-bars" onClick={()=>setView(!view)}></i>
             </li>
         </ul>

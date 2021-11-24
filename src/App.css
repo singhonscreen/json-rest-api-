@@ -294,11 +294,11 @@ span{
   width: 75px;
   border-radius: 5px;
 }
-.headinggrid .main{
+/* .headinggrid .main{
   display:none ;
   height: 150px;
   width: 150px;
-}
+} */
 .headinggrid .main:hover{
   display: block;
 }
